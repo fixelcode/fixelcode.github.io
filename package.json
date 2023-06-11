@@ -1,0 +1,28 @@
+{
+	"name": "tailstart-landing-page-lite",
+	"version": "0.1.0",
+	"description": "Ready made HTML and TailwindCSS landing page boilerplate.",
+	"main": "",
+	"keywords": [
+		"tailwind",
+		"tailwindcss",
+		"landing page",
+		"boilerplate",
+		"template"
+	],
+	"author": {
+		"name": "Fixelcode",
+		"email": "hi@fixelcode.com",
+		"url": "https://fixelcode.com/"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/app.css",
+		"build:prod": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/app.min.css --minify",
+		"watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/app.css --watch",
+		"watch:prod": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/app.min.css --watch --minify"
+	},
+	"devDependencies": {
+		"tailwindcss": "^3.3.2"
+	}
+}
